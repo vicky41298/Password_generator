@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <label for="password-count">Enter the number of passwords:</label>
+        <input type="number" id="password-count" min="1" step="1">
+        <label for="password-length">Enter password length:</label>
+        <input type="number" id="password-length" min="1" step="1">
+        <p>Choose character set for password:</p>
+        <label><input type="checkbox" name="character-set" value="digits"> Digits</label>
+        <label><input type="checkbox" name="character-set" value="letters"> Letters</label>
+        <label><input type="checkbox" name="character-set" value="special-characters"> Special Characters</label>
+        <button onclick="generatePasswords()">Generate Passwords</button>
+        <p id="generated-passwords"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
