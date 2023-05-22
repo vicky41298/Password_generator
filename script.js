@@ -29,7 +29,7 @@ function generatePasswords() {
     }
 
     var generatedPasswords = document.getElementById("generated-passwords");
-    generatedPasswords.innerHTML = ""; // Clear previous passwords
+    generatedPasswords.innerHTML = ""; 
 
     for (var j = 0; j < count; j++) {
         var password = "";
@@ -63,7 +63,7 @@ function generatePasswords() {
             passwordElement.textContent = password;
             generatedPasswords.appendChild(passwordElement);
         } else {
-            j--; // Regenerate password if requirements are not met
+            j--; 
         }
     }
 }
