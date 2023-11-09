@@ -5,6 +5,14 @@
     padding: 20px;
     text-align: center;
 }
+
+.fleft{
+float: left;
+}
+
+.fright{
+float: right;
+}
 h1 {
     margin-top: 0;
 }
@@ -16,4 +24,5 @@ button {
 #generated-password {
     font-weight: bold;
     margin-top: 20px;
+  	align: left;
 }
